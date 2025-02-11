@@ -7,7 +7,7 @@ public class FunInter {
         lst.add(32);
         lst.add(43);
 
-        Consumer<List<Integer>> c = l -> l.stream().map(ele -> 2 * ele).forEach(System.out::println);
+        Consumer<List<Integer>> c = l -> l.stream().forEach(System.out::println);
         c.accept(lst);
 
         Predicate<Integer> neg = val -> val < 0;
